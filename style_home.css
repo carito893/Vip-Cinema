@@ -1,1 +1,72 @@
-/* Estilos del nuevo proyecto */
+/* Slider */
+
+.slider{
+    width: 100%;
+    height: 460px;
+    margin: auto;
+    position: relative;
+    list-style: none;;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.slider img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.slider input[type="radio"]{
+    position: relative;
+    z-index: 100;
+}
+
+.slider input[type="radio"]:checked ~ img{
+    opacity: 1;
+    transition: all 1s;
+}
+
+/* Barra de Navegacion */
+
+.nave{
+    width: 100%;
+    margin: auto;
+    margin-left: 40%;
+}
+
+.header{
+    background-color: #321b70;
+    width: 100%;
+    position: -webkit-sticky;
+    z-index: 10;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+
+}
+
+nav ul li{
+    font-size: 30px;
+    flex-direction: row;
+
+
+}
+
+nav ul li a{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover{
+    background: #44b3d7;
+    color: #321b70;
+}
