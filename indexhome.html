@@ -5,32 +5,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style_home">
-    <link rel="shortcut icon" href="logos_v/img1.png" type="image/x-icon">
     <title>VIP Cinema</title>
+    <link rel="shortcut icon" href="img/favicon_cinema-vip.png" type="image/x-icon">
     <link rel="stylesheet" href="style_home.css">
+    <link href="https://fonts.googleapis.com/css?family=Share&display=swap" rel="stylesheet"> <!-- Fuente para texto -->
+    <link href="https://fonts.googleapis.com/css?family=Sansita&display=swap" rel="stylesheet"> <!-- Fuente para botones -->
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline&display=swap" rel="stylesheet"> <!-- Fuente para títulos -->
+
+
+
 </head>
 
 <body>
-        <section class="header"> <!-- Aquí comienza la barra de navegación -->
+    <!-- Aquí comienza la cabecera -->
+    <header>   
+    <section class="header"> <!-- Aquí comienza la barra de navegación -->
             <nav class="nave">
+                <div><img class="logovip" src="img/logo_cinema-VIP.png" alt=""></div>
+                    <ul>
+                        <li> <a href="#">Home</a>
                         <ul>
+                            <li> <a href="#">Estrenos</a></li>
+                            <li> <a href="#">Actividades</a></li>
+                        </ul>
+                        </li>
+                        <li> <a href="#">Cartelera</a>
+                        <ul>
+                            <li> <a href="#">Guasón</a></li>
+                            <li> <a href="#">Los Silencios</a></li>
+                            <li> <a href="#">Qué dirá la gente?</a></li>
+                        </ul>
+                        </li>
+                        <li> <a href="#">Coming Soon</a></li>
+                        <li> <a href="#">About us</a></li>
+                        <li> <a href="#">Find us</a></li>
+                    </ul>
+            </nav>
+        </section>
+    
+        <section>
+            <nav>
+                <div id="menuA">
+                    <div href="#" class="showhim"> <span class="menumov"> <img src="img/down.png" alt="" width="30px" height="20px"> <img
+                                src="img/logo_cinema-VIP.png" alt="" width="18%"> </span>
+                        <div class="showme">
                             <li> <a href="#">Home</a></li>
-                            <li> <a href="#">Cartelera</a></li>
                             <li> <a href="#">Coming Soon</a></li>
                             <li> <a href="#">About us</a></li>
                             <li> <a href="#">Find us</a></li>
-                        </ul>
+                        </div>
+                    </div>
+                </div>
             </nav>
         </section>
-    <!-- Aquí comienza la cabecera -->
-    <header>
+        
+    
+        
         <!-- Aquí comienza el slider -->
         <section>
             <ul class="slider">
                 <li>
                     <input type="radio" name="slider" checked>
-                    <img src="img/73716467-cine-película-horizontal-banner-maíz-estilo-de-dibujos-animados.jpg" alt="">
+                    <img src="img/slider2.jpg" alt="">
                 </li>
                 <li>
                     <input type="radio" name="slider" checked>
@@ -38,15 +74,15 @@
                 </li>
                 <li>
                     <input type="radio" name="slider" checked>
-                    <img src="img/moonlight_banner.jpeg" alt="">
+                    <img src="img/slider4.jpg" alt="">
                 </li>
                 <li>
                     <input type="radio" name="slider" checked>
-                    <img src="img/inception_movie_poster_banner_04.jpg" alt="">
+                    <img src="img/slider6.jpg" alt="">
                 </li>
                 <li>
                     <input type="radio" name="slider" checked>
-                    <img src="img/moonlight_banner.jpeg" alt="">
+                    <img src="img/slider2.jpg" alt="">
                 </li>
             </ul>
         </section>
@@ -54,15 +90,72 @@
     <!-- Aquí termina la cabecera -->
 
     <main>
-    <!-- Aquí esta la vista de la cartelera -->
-        <div class="father">
-            <div class="container">
-                <div class="movie1 box"><img src="img/joker.jpg" alt="" class="filter"></div>
-                <div class="movie2 box"><img src="img/los-silencios.png" alt="" class="filter"></div>
-                <div class="movie3 box"><img src="img/que-dira-la-gente.png" alt="" class="filter"></div>
+        <!-- Aquí inicia el grid de vista de la cartelera -->
+            <div class="father">
+                <div class="container">
+                      <!-- Aquí inicia la parte izq del grid -->
+                    <div class="opening">ESTRENOS</div> 
+                    <div class="movie1 box"><img src="img/joker.jpg" alt="" class="boximg"></div>
+                    <div class="movie2 box"><img src="img/los-silencios.png" alt="" class="boximg"></div>
+                    <div class="movie3 box"><img src="img/que-dira-la-gente.png" alt="" class="boximg"></div>
 
+                    <!-- íconos y bonotes de ver más al pasar el ratón sobre cada película -->
+                        <div class="back1 box2 hover_play">
+                            <div><a href="https://www.youtube.com/watch?v=UEpPggajCVQ" target="_blank"><img src="img/icon-neon.png" alt=""></a></div>
+                            <div><button alt="" class="hide"><a href="#">VER MÁS</a></button></div>
+                        </div><br>
+                        <div class="back2 box2 hover_play">
+                            <div><a href="https://youtu.be/yg55epoWyXk" target="_blank"><img src="img/icon-neon.png" alt=""></a></div>
+                            <div><button alt="" class="hide"><a href="#">VER MÁS</a></button></div>
+                        </div><br>
+                        <div class="back3 box2 hover_play">
+                            <div><a href="https://www.youtube.com/watch?v=-yjpm0aGrNo" target="_blank"><img src="img/icon-neon.png" alt=""></a></div>
+                            <div><button alt="" class="hide"><a href="#">VER MÁS</a></button></div>
+                </div>
+
+
+                    <div class="textmovie1 box3">
+                        <p class="movieTitle">GUASÓN (JOKER)</p>
+                        <p class="director">Todd Phillips / USA</p>
+                        <p class="type">THRILLER </p>
+                    </div>
+                    <div class="textmovie2 box3">
+                        <p class="movieTitle">LOS SILENCIOS</p>
+                        <p class="director">Beatriz Seigner / Colombia – Brasil – Francia</p>
+                        <p class="type">DRAMA</p>
+                    </div>
+                    <div class="textmovie3 box3">
+                        <p class="movieTitle">¿QUÉ DIRÁ LA GENTE?</p>
+                        <p class="director">Iram Haq / Noruega – Alemania – Suecia</p>
+                        <p class="type">DRAMA</p>
+                    </div>
+                     <!-- Aquí inicia la parte derecha del grid -->
+                    <div class="rest">RESTAURANTE BAR</div>
+                    <div class="restpic box"><img src="img/restbar.jpg" alt=""></div>
+                    <div class="restText"><p>Ven con tus amigos y disfruta de una buena película y los mejores cocteles de la ciudad.
+                         Nuestro Restaurante Bar está abierto todos los días (domingos y lunes cerramos a las 8 p.m.).
+                    </p></div>
+                    <div class="events">EVENTOS</div>
+                    <div class="eventspic1 box"><img src="img/event1.jpg" alt=""></div>
+                    <div class="event1"><p>Participa de la más escalofriante fiesta de disfraces!! El próximo viernes 25 de octubre concurso de disfraces en CINE VIP.
+                    </p></div>
+
+                    <div class="eventspic2 box"><img src="img/event2.jpg" alt=""></div>
+                    <div class="event2"><p> Tienes un evento?</p>
+                        <p> nosotros lo organizamos!</p>
+                    <ul class="eventlist">
+                        <li>Festivales de cine</li>
+                        <li>Funciones especiales</li>
+                        <li>Fiestas</li>
+                        <li>Cumpleaños</li>
+                        <li>Entregas de premios</li>
+                        <li>resentaciones corporativas</li>
+                        <li>Eventos académicos</li>
+                        <li>Seminarios</li>
+                    </ul>
+                </div>
+                </div>
             </div>
-        </div>
     <!-- Aquí termina la vista de la cartelera -->
     </main>
 
@@ -78,8 +171,11 @@
             </div>
             <div class="insidefoo2">
                 <h4>VIP CINEMA | The best cinema in Bogotá, DC | Cra 18 A # 103 - 11 | Santa Bibiana</h4>
-                <a href="#"><img src="" alt="Facebook"></a>
-                <a href="#"><img src="" alt="Instagram"></a>
+                <p>Follow us</p>
+                <a href="https://www.facebook.com" target="_blank"><img src="img/facebook.png" alt="" class="socialm"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="img/instagram.png" alt="" class="socialm" ></a>
+                <a href="https://twitter.com/?lang=es" target="_blank"><img src="img/twitter.png" alt="" class="socialm" ></a>
+                <a href="https://www.whatsapp.com/" target="_blank"><img src="img/whatsapp.png" alt="" class="socialm" ></a>
                 <br>
                 <sub>Todos los derechos reservados &copy;</sub>
             </div>
