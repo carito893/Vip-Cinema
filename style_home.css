@@ -18,7 +18,7 @@ body{
     background-color: #321b70;
     width: 100%;
     position: fixed;
-    z-index: 5;
+    z-index: 1000;
     filter: opacity(90%)
 }
 
