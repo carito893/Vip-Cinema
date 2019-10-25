@@ -3,6 +3,7 @@
     margin: 0%;
     margin-top: 2%;
     /* background-image: url(img/wall-2059909__340.png); */
+    z-index: -1000px;
 }
 a:link
 {
@@ -15,6 +16,9 @@ text-decoration:none;
     grid-template-rows:repeat(1, 1fr);
     column-gap: 10px; 
     row-gap: 10px;
+    background-image: url(img/wall-2059909__340.png) ;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .h2Comming {
     font-family: 'Bungee Inline', cursive;
@@ -32,7 +36,7 @@ text-decoration:none;
     width: 95%;
     display: grid;
     grid-template-columns: repeat(6, 1fr) repeat(1, 0.3fr) repeat(3, 1fr);
-    grid-template-rows:repeat(9, 1fr) ;
+    grid-template-rows:repeat(1, 0.6fr) repeat(2, 1fr) repeat(1, 0.6fr) repeat(2, 1fr) repeat(1, 0.6fr) repeat(2, 1fr) ;
     column-gap: 10px; 
     row-gap: 10px;
     align-content: center;
@@ -268,6 +272,7 @@ text-decoration:none;
 }
 .movie9c:hover {
     text-shadow: -1px 1px #8dcc19, -1px -1px #ffffff, 1px -1px #ffffff, 1px 1px #f3f3f2, 3px 3px #6ac77e;
+
 }
 .imgMovie9c {
     grid-column: 5/7;
@@ -290,6 +295,10 @@ text-decoration:none;
     letter-spacing: 10px;
     overflow: hidden;
     padding-top: 7%;
+    text-shadow:
+    0 0 100px rgba(229, 255, 0),
+    0 0 140px rgba(229, 255, 0),
+    0 0 180px rgba(229, 255, 0);
 }
 
 .ContainerComming3{
@@ -298,81 +307,272 @@ text-decoration:none;
     grid-row:1/10;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows:repeat(15, 1fr);
+    grid-template-rows:repeat(1, 0.8fr) repeat(13, 0.5fr);
     column-gap: 10px; 
     row-gap: 10px;
 }
-
-.June {
+.January {
     grid-column: 1/1;
-    grid-row:2/4;
+    grid-row:2/2;
     font-family: 'Bungee Inline', cursive;
     font-size: 150%;
     background-color:  #2b0752;
-    color: #44b3d7;
     list-style: none;
     text-align: center;
+    color: #ddbfdd;
+    text-align: center;
+    text-shadow:
+    0 0 5px rgb(255, 0, 212),
+    0 0 10px rgba(255, 0, 212),
+    0 0 20px rgba(255, 0, 212),
+    0 0 40px rgba(255, 0, 212),
+    0 0 80px rgba(255, 0, 212),
+    0 0 90px rgba(255, 0, 212),
+    0 0 100px rgba(255, 0, 212),
+    0 0 140px rgba(255, 0, 212),
+    0 0 180px rgba(255, 0, 212);
+}
+.February {
+    grid-column: 1/1;
+    grid-row:3/3;
+    font-family: 'Bungee Inline', cursive;
+    font-size: 150%;
+    background-color:  #2b0752;
+    list-style: none;
+    text-align: center;
+    color: #ddbfdd;
+    list-style: none;
+    text-align: center;
+    text-shadow:
+    0 0 5px rgb(255, 0, 212),
+    0 0 10px rgba(255, 0, 212),
+    0 0 20px rgba(255, 0, 212),
+    0 0 40px rgba(255, 0, 212),
+    0 0 80px rgba(255, 0, 212),
+    0 0 90px rgba(255, 0, 212),
+    0 0 100px rgba(255, 0, 212),
+    0 0 140px rgba(255, 0, 212),
+    0 0 180px rgba(255, 0, 212);  
+}
+.March{
+    grid-column: 1/1;
+    grid-row:4/4;
+    font-family: 'Bungee Inline', cursive;
+    font-size: 150%;
+    background-color:  #2b0752;
+    list-style: none;
+    text-align: center;
+    color: #ddbfdd;
+    list-style: none;
+    text-align: center;
+    text-shadow:
+    0 0 5px rgb(255, 0, 212),
+    0 0 10px rgba(255, 0, 212),
+    0 0 20px rgba(255, 0, 212),
+    0 0 40px rgba(255, 0, 212),
+    0 0 80px rgba(255, 0, 212),
+    0 0 90px rgba(255, 0, 212),
+    0 0 100px rgba(255, 0, 212),
+    0 0 140px rgba(255, 0, 212),
+    0 0 180px rgba(255, 0, 212);     
+}
+.April{
+    grid-column: 1/1;
+    grid-row:5/5;
+    font-family: 'Bungee Inline', cursive;
+    font-size: 150%;
+    background-color:  #2b0752;
+    list-style: none;
+    text-align: center;
+    color: #ddbfdd;
+    list-style: none;
+    text-align: center;
+    text-shadow:
+    0 0 5px rgb(255, 0, 212),
+    0 0 10px rgba(255, 0, 212),
+    0 0 20px rgba(255, 0, 212),
+    0 0 40px rgba(255, 0, 212),
+    0 0 80px rgba(255, 0, 212),
+    0 0 90px rgba(255, 0, 212),
+    0 0 100px rgba(255, 0, 212),
+    0 0 140px rgba(255, 0, 212),
+    0 0 180px rgba(255, 0, 212);   
+}
+.may{
+    grid-column: 1/1;
+    grid-row:6/6;
+    font-family: 'Bungee Inline', cursive;
+    font-size: 150%;
+    background-color:  #2b0752;
+    list-style: none;
+    text-align: center;
+    color: #ddbfdd;
+    list-style: none;
+    text-align: center;
+    text-shadow:
+    0 0 5px rgb(255, 0, 212),
+    0 0 10px rgba(255, 0, 212),
+    0 0 20px rgba(255, 0, 212),
+    0 0 40px rgba(255, 0, 212),
+    0 0 80px rgba(255, 0, 212),
+    0 0 90px rgba(255, 0, 212),
+    0 0 100px rgba(255, 0, 212),
+    0 0 140px rgba(255, 0, 212),
+    0 0 180px rgba(255, 0, 212);  
+}
+.June {
+    grid-column: 1/1;
+    grid-row:7/7;
+    font-family: 'Bungee Inline', cursive;
+    font-size: 150%;
+    background-color:  #2b0752;
+    list-style: none;
+    text-align: center;
+    color: #ddbfdd;
+    list-style: none;
+    text-align: center;
+    text-shadow:
+    0 0 5px rgb(255, 0, 212),
+    0 0 10px rgba(255, 0, 212),
+    0 0 20px rgba(255, 0, 212),
+    0 0 40px rgba(255, 0, 212),
+    0 0 80px rgba(255, 0, 212),
+    0 0 90px rgba(255, 0, 212),
+    0 0 100px rgba(255, 0, 212),
+    0 0 140px rgba(255, 0, 212),
+    0 0 180px rgba(255, 0, 212);
 }
 .July {
     
     grid-column: 1/1;
-    grid-row:4/6;
+    grid-row:8/8;
     font-family: 'Bungee Inline', cursive;
     font-size: 150%;
     background-color: #2b0752;
-    color: #44b3d7;
     list-style: none;
     text-align: center;
+    color: #ddbfdd;
+    list-style: none;
+    text-align: center;
+    text-shadow:
+    0 0 5px rgb(255, 0, 212),
+    0 0 10px rgba(255, 0, 212),
+    0 0 20px rgba(255, 0, 212),
+    0 0 40px rgba(255, 0, 212),
+    0 0 80px rgba(255, 0, 212),
+    0 0 90px rgba(255, 0, 212),
+    0 0 100px rgba(255, 0, 212),
+    0 0 140px rgba(255, 0, 212),
+    0 0 180px rgba(255, 0, 212);
 }
 .August {
+    display: block;
     grid-column: 1/1;
-    grid-row:6/8;
+    grid-row:9/9;
     font-family: 'Bungee Inline', cursive;
     font-size: 150%;
     background-color: #2b0752;
-    color: #44b3d7;
     list-style: none;
     text-align: center;
+    color: #ddbfdd;
+    list-style: none;
+    text-align: center;
+    text-shadow:
+    0 0 5px rgb(255, 0, 212),
+    0 0 10px rgba(255, 0, 212),
+    0 0 20px rgba(255, 0, 212),
+    0 0 40px rgba(255, 0, 212),
+    0 0 80px rgba(255, 0, 212),
+    0 0 90px rgba(255, 0, 212),
+    0 0 100px rgba(255, 0, 212),
+    0 0 140px rgba(255, 0, 212),
+    0 0 180px rgba(255, 0, 212);
 }
 .September {
     grid-column: 1/1;
-    grid-row:8/10;
+    grid-row:10/10;
     font-family: 'Bungee Inline', cursive;
     font-size: 150%;
     background-color: #2b0752;
-    color: #44b3d7;
     list-style: none;
     text-align: center;
+    color: #ddbfdd;
+    list-style: none;
+    text-align: center;
+    text-shadow:
+    0 0 5px rgb(255, 0, 212),
+    0 0 10px rgba(255, 0, 212),
+    0 0 20px rgba(255, 0, 212),
+    0 0 40px rgba(255, 0, 212),
+    0 0 80px rgba(255, 0, 212),
+    0 0 90px rgba(255, 0, 212),
+    0 0 100px rgba(255, 0, 212),
+    0 0 140px rgba(255, 0, 212),
+    0 0 180px rgba(255, 0, 212);
 }
 .October {
     grid-column: 1/1;
-    grid-row:10/12;
+    grid-row:11/11;
     font-family: 'Bungee Inline', cursive;
     font-size: 150%;
     background-color: #2b0752;
-    color: #44b3d7;
     list-style: none;
     text-align: center;
+    color: #ddbfdd;
+    list-style: none;
+    text-align: center;
+    text-shadow:
+    0 0 5px rgb(255, 0, 212),
+    0 0 10px rgba(255, 0, 212),
+    0 0 20px rgba(255, 0, 212),
+    0 0 40px rgba(255, 0, 212),
+    0 0 80px rgba(255, 0, 212),
+    0 0 90px rgba(255, 0, 212),
+    0 0 100px rgba(255, 0, 212),
+    0 0 140px rgba(255, 0, 212),
+    0 0 180px rgba(255, 0, 212);
 } 
 .November {
     grid-column: 1/1;
-    grid-row:12/14;
+    grid-row:12/12;
     font-family: 'Bungee Inline', cursive;
     font-size: 150%;
     background-color: #2b0752;
-    color: #44b3d7;
     list-style: none;
     text-align: center;
+    color: #ddbfdd;
+    list-style: none;
+    text-align: center;
+    text-shadow:
+    0 0 5px rgb(255, 0, 212),
+    0 0 10px rgba(255, 0, 212),
+    0 0 20px rgba(255, 0, 212),
+    0 0 40px rgba(255, 0, 212),
+    0 0 80px rgba(255, 0, 212),
+    0 0 90px rgba(255, 0, 212),
+    0 0 100px rgba(255, 0, 212),
+    0 0 140px rgba(255, 0, 212),
+    0 0 180px rgba(255, 0, 212);
 }
 .December {
     grid-column: 1/1;
-    grid-row:14/16;
+    grid-row:13/13;
     font-family: 'Bungee Inline', cursive;
     font-size: 150%;
     background-color: #2b0752;
-    color: #44b3d7;
+    color: #ddbfdd;
     list-style: none;
     text-align: center;
+    text-shadow:
+    0 0 5px rgb(255, 0, 212),
+    0 0 10px rgba(255, 0, 212),
+    0 0 20px rgba(255, 0, 212),
+    0 0 40px rgba(255, 0, 212),
+    0 0 80px rgba(255, 0, 212),
+    0 0 90px rgba(255, 0, 212),
+    0 0 100px rgba(255, 0, 212),
+    0 0 140px rgba(255, 0, 212),
+    0 0 180px rgba(255, 0, 212);
 } 
 
 .TextComming {
@@ -381,6 +581,7 @@ text-decoration:none;
     list-style: none;
     text-align: center;
     font-family: 'Share', cursive;
+
 }
 .TextComming1 {
     background-color: #2b0752;
@@ -390,6 +591,37 @@ text-decoration:none;
     text-shadow: none;
     line-height: 150%;
     padding: 5px;
+    /* text-shadow:
+    0 0 5px rgba(0,178,255,1),
+    0 0 10px rgba(0,178,255,1),
+    0 0 20px rgba(0,178,255,1),
+    0 0 40px rgba(38,104,127,1),
+    0 0 80px rgba(38,104,127,1),
+    0 0 90px rgba(38,104,127,1),
+    0 0 100px rgba(38,104,127,1),
+    0 0 140px rgba(38,104,127,1),
+    0 0 180px rgba(38,104,127,1); */
+}
+
+.TextComming3 {
+    background-color: #2b0752;
+    text-align: center;
+    font-family: 'Share', cursive;
+    text-shadow: none;
+    line-height: 150%;
+    padding: 5px;
+    font-family: 'Share', cursive;
+    color: #fff;
+    text-shadow:
+    0 0 5px rgba(0,178,255,1),
+    0 0 10px rgba(0,178,255,1),
+    0 0 20px rgba(0,178,255,1),
+    0 0 40px rgba(38,104,127,1),
+    0 0 80px rgba(38,104,127,1),
+    0 0 90px rgba(38,104,127,1),
+    0 0 100px rgba(38,104,127,1),
+    0 0 140px rgba(38,104,127,1),
+    0 0 180px rgba(38,104,127,1);
 }
 
 .buttonComming {
@@ -641,3 +873,6 @@ text-decoration:none;
     color: #2b0752;
 }
 
+@media screen and (min-width:751px){
+
+}
