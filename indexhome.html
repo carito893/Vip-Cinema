@@ -21,19 +21,19 @@
     <header>   
     <section class="header"> <!-- Aquí comienza la barra de navegación -->
             <nav class="nave">
-                <div><img class="logovip" src="img/logo_cinema-VIP.png" alt=""></div>
+                <div><a href="indexhome.html"><img class="logovip" src="img/logo_cinema-VIP.png" alt=""></div></a>
                     <ul>
-                        <li> <a href="#">Home</a>
+                        <li> <a href="indexhome.html">Home</a>
                         <ul>
                             <li> <a href="#">Estrenos</a></li>
-                            <li> <a href="#">Actividades</a></li>
+                            <li> <a href="#">Eventos</a></li>
                         </ul>
                         </li>
-                        <li> <a href="#">Cartelera</a>
+                        <li> <a href="Cartelera25OCT/cartelera.html">Cartelera</a>
                         <ul>
-                            <li> <a href="#">Guasón</a></li>
-                            <li> <a href="#">Los Silencios</a></li>
-                            <li> <a href="#">Qué dirá la gente?</a></li>
+                            <li> <a href="Cartelera25OCT/joker.html">Guasón</a></li>
+                            <li> <a href="Cartelera25OCT/los_silencios.html">Los Silencios</a></li>
+                            <li> <a href="Cartelera25OCT/gente.html">Qué dirá la gente?</a></li>
                         </ul>
                         </li>
                         <li> <a href="#">Coming Soon</a></li>
@@ -63,28 +63,46 @@
         
         <!-- Aquí comienza el slider -->
         <section>
-            <ul class="slider">
-                <li>
-                    <input type="radio" name="slider" checked>
-                    <img src="img/slider2.jpg" alt="">
-                </li>
-                <li>
-                    <input type="radio" name="slider" checked>
-                    <img src="img/inception_movie_poster_banner_04.jpg" alt="">
-                </li>
-                <li>
-                    <input type="radio" name="slider" checked>
-                    <img src="img/slider4.jpg" alt="">
-                </li>
-                <li>
-                    <input type="radio" name="slider" checked>
-                    <img src="img/slider6.jpg" alt="">
-                </li>
-                <li>
-                    <input type="radio" name="slider" checked>
-                    <img src="img/slider5.jpg" alt="">
-                </li>
-            </ul>
+            <div class="slideshow-container">
+        
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 5</div>
+                  <img src="img/slider2.jpg" style="width:100%">
+                  <div class="text"></div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 5</div>
+                  <img src="img/inception_movie_poster_banner_04.jpg" style="width:100%">
+                  <div class="text"></div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 5</div>
+                  <img src="img/slider4.jpg" style="width:100%">
+                  <div class="text"></div>
+                </div>
+                <div class="mySlides fade">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="img/slider5.jpg" style="width:100%">
+                        <div class="text"></div>
+                      </div>
+        
+                      <div class="mySlides fade">
+                            <div class="numbertext">3 / 5</div>
+                            <img src="img/slider6.jpg" style="width:100%">
+                            <div class="text"></div>
+                          </div>
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                </div>
         </section>
     </header>
     <!-- Aquí termina la cabecera -->
@@ -101,16 +119,70 @@
 
                     <!-- íconos y bonotes de ver más al pasar el ratón sobre cada película -->
                         <div class="back1 box2 hover_play">
-                            <div><a href="https://www.youtube.com/watch?v=UEpPggajCVQ" target="_blank"><img src="img/icon-neon.png" alt=""></a></div>
-                            <div><button alt="" class="hide"><a href="#">VER MÁS</a></button></div>
+                            <div><img id="myBtn" value="cero" src="img/icon-neon.png" alt=""></div>
+                            <div><button alt="" class="hide"><a href="Cartelera25OCT/cartelera.html">VER MÁS</a></button></div>
+
+                            <!------------MODAL-------------->
+                            <div id="myModal" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <span class="close">&times;</span>
+                                        <!-- <h2>Modal Header</h2> -->
+                                    </div>
+                                    <div class="modal-body">
+                                        <iframe width="80%" height="280px" src="https://www.youtube.com/embed/-qqXbdAFcZU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                                    </div>
+                                   <!--  <div class="modal-footer">
+                                        <h3>Modal Footer</h3>
+                                    </div> -->
+                                </div>
+                            </div>
                         </div><br>
+
+                        <!------------------- parte modal para el segundo vídeo------------>
                         <div class="back2 box2 hover_play">
-                            <div><a href="https://youtu.be/yg55epoWyXk" target="_blank"><img src="img/icon-neon.png" alt=""></a></div>
-                            <div><button alt="" class="hide"><a href="#">VER MÁS</a></button></div>
+                            <div><img id="myBtn2" src="img/icon-neon.png" alt=""></div>
+                            <div><button alt="" class="hide"><a href="Cartelera25OCT/cartelera.html">VER MÁS</a></button></div>
+                            <!------------MODAL-------------->
+                            <div id="myModal2" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <span class="close">&times;</span>
+                                        <!-- <h2>Modal Header</h2> -->
+                                    </div>
+                                    <div class="modal-body">
+                                        <iframe width="80%" height="280" src="https://www.youtube.com/embed/yg55epoWyXk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                   <!--  <div class="modal-footer">
+                                        <h3>Modal Footer</h3>
+                                    </div> -->
+                                </div>
+                            </div>
                         </div><br>
+
+                        <!------------------- parte modal para el tercer vídeo------------>
                         <div class="back3 box2 hover_play">
-                            <div><a href="https://www.youtube.com/watch?v=-yjpm0aGrNo" target="_blank"><img src="img/icon-neon.png" alt=""></a></div>
-                            <div><button alt="" class="hide"><a href="#">VER MÁS</a></button></div>
+                            <div><img id="myBtn3" src="img/icon-neon.png" alt=""></div>
+                            <div><button alt="" class="hide"><a href="Cartelera25OCT/cartelera.html">VER MÁS</a></button></div>
+
+                        <!------------MODAL-------------->
+                        <div id="myModal3" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <span class="close">&times;</span>
+                                    <!-- <h2>Modal Header</h2> -->
+                                </div>
+                                <div class="modal-body">
+                                    <iframe width="80%" height="280" src="https://www.youtube.com/embed/-yjpm0aGrNo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                               <!--  <div class="modal-footer">
+                                    <h3>Modal Footer</h3>
+                                </div> -->
+                            </div>
+                        </div>
                 </div>
 
 
@@ -132,7 +204,7 @@
                      <!-- Aquí inicia la parte derecha del grid -->
                     <div class="rest">RESTAURANTE BAR</div>
                     <div class="restpic box"><img src="img/restbar.jpg" alt=""></div>
-                    <div class="restText"><p>Ven con tus amigos y disfruta de una buena película y los mejores cocteles de la ciudad.
+                    <div class="restText"><p>Ven con tus amigos y disfruta de una buena película y los mejores coctéles de la ciudad.
                          Nuestro Restaurante Bar está abierto todos los días (domingos y lunes cerramos a las 8 p.m.).
                     </p></div>
                     <div class="events">EVENTOS</div>
@@ -141,15 +213,15 @@
                     </p></div>
 
                     <div class="eventspic2 box"><img src="img/event2.jpg" alt=""></div>
-                    <div class="event2"><p> Tienes un evento?</p>
-                        <p> ¡Nosotros lo organizamos!</p>
+                    <div class="event2"><p>¿Tienes un evento?</p>
+                        <p>¡Nosotros lo organizamos!</p>
                     <ul class="eventlist">
                         <li>Festivales de cine</li>
                         <li>Funciones especiales</li>
                         <li>Fiestas</li>
-                        <li>Cumpleaños</li>
+                        <li>Temporada de ópera en el cine</li>
                         <li>Entregas de premios</li>
-                        <li>resentaciones corporativas</li>
+                        <li>Presentaciones corporativas</li>
                         <li>Eventos académicos</li>
                         <li>Seminarios</li>
                     </ul>
